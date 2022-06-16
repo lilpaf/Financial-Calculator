@@ -39,6 +39,14 @@ namespace Financial_Calculator.RegexCheck
                 return letterNumbersToNumbers[stringToCheck];
             }
 
+            foreach (var @char in stringToCheck)
+            {
+                if (!char.IsDigit(@char))
+                {
+                    throw new ArgumentOutOfRangeException(stringToCheck,
+                        "Max value (n) allowed as letters is twenty (20).");
+                }
+            }
             return int.Parse(stringToCheck);
         }
     }

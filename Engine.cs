@@ -12,7 +12,7 @@ namespace Financial_Calculator
                 try
                 {
                     int functonToeqecute = MainMenu.MenuText();
-
+                    Console.WriteLine();
                     
                     if (functonToeqecute == 1)
                     {
@@ -39,7 +39,9 @@ namespace Financial_Calculator
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine();
                     Console.WriteLine(ex.Message);
+                    Console.WriteLine();
                     MainMenu.BackToMenu();
                 }
             }
