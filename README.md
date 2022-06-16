@@ -13,7 +13,7 @@ The rate of return (r) value regex pattern looks like this: 8.8%/8,8 percent.
 The num of periods (n - years) value regex pattern looks like this: 30 years/twenty years. 
 !!!Important twenty (20) is the maximum number that can be writen with letters!!!
 
-## Examples of working tests:
+## Examples of working tests
 
 ### For FV:
 Bob Terwilliger received $12,745 for his services as a financial consultant to the mayor's office of his hometown of Springfield. Bob says that his consulting work was his civic duty and that he should not receive any compensation. So, he has invested his paycheck into an account paying 3.91 percent annual interest and left the account in his will to the city of Springfield on the condition that the city could not collect any money from the account for 150 years. How much money will the city receive from Bob's generosity in 150 years?
