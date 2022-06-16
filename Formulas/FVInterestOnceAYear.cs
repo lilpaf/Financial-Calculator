@@ -74,7 +74,7 @@ namespace Financial_Calculator
             string nString = Check.RegexSuccess(nMatch, "number of periods");
 
             fvString = fvString.Replace(",", ""); // problem with Culture
-            //rString = rString.Replace(",", "");
+            rString = rString.Replace(",", ".");
             rString = rString.Replace("%", "");
             nString = nString.Replace(" years", "");
             PresentValue = decimal.Parse(fvString.Substring(1, fvString.Length - 1));
