@@ -1,5 +1,5 @@
 # Financial-Calculator
-Takes financial questions as and returns the result as number.
+Takes financial questions as text and returns the result as number.
 For now it only can solve present value (PV) and future value (FV) when accruing interest is only once in a year. 
 Future value when accruing interest is more than once in a year is in development.
 
