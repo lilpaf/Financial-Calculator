@@ -23,7 +23,7 @@ The result from the application is: 4017367.51 and the answer from the quiz is 4
 ### For FV when accruing interest is more than once a year (compound interest monthly and quarterly):
 Mr. X makes an initial investment of $ 10,000 for a period of 5 years. Find the value of the investment after the five years if the investment earns the return of 3 % compounded monthly.
 
-The result from the application is: $ 11616.17 and the answer from the quiz is 11,616.17
+The result from the application is: 11616.17 and the answer from the quiz is 11,616.17
 
 ### For PV:
 Mr. X wants $10,000 after 3 years. The interest rate available on a specific investment, which he is interested in, is 4% per annum. How much he should invest today to receive the desired amount.
