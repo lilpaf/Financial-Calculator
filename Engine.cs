@@ -1,4 +1,5 @@
 ﻿using System;
+using Financial_Calculator.Abstract_Classes;
 using Financial_Calculator.Formulas;
 
 namespace Financial_Calculator
@@ -11,28 +12,30 @@ namespace Financial_Calculator
             {
                 try
                 {
-                    int functonToeqecute = MainMenu.MenuText();
+                    int functonToExecute = MainMenu.MenuText();
                     Console.WriteLine();
-                    
-                    if (functonToeqecute == 1)
+                    Console.WriteLine("Enter your text:");
+                    string text = Console.ReadLine();
+
+                    if (functonToExecute == 1)
                     {
-                        FVInterestOnceAYear formula = new FVInterestOnceAYear();
-                        formula.InputValues();
-                        Console.WriteLine($"The future value is: {formula.Result():F2}");
+                        PVAndFVFormulas futureValueOnceAYear = new FVInterestOnceAYear();
+                        futureValueOnceAYear.InputValues(text);
+                        Console.WriteLine($"The future value is: {futureValueOnceAYear.Result():F2}");
                         MainMenu.BackToMenu();
                     }
-                    /*else if (functonToeqecute == 2)
+                    else if (functonToExecute == 2)
                     {
-                        FVIntrestRateMoreThanOnceAYear formula = new FVIntrestRateMoreThanOnceAYear();
-                        formula.InputValues();
-                        Console.WriteLine($"The future value is: {formula.Result():F2}");
+                        PVAndFVFormulas futureValueMoreThanOnceAYear = new FVIntrestRateMoreThanOnceAYear();
+                        futureValueMoreThanOnceAYear.InputValues(text);
+                        Console.WriteLine($"The future value is: {futureValueMoreThanOnceAYear.Result():F2}");
                         MainMenu.BackToMenu();
-                    }*/
-                    else if (functonToeqecute == 3)
+                    }
+                    else if (functonToExecute == 3)
                     {
-                        PresentValue formula = new PresentValue();
-                        formula.InputValues();
-                        Console.WriteLine($"The present value is: {formula.Result():F2}");
+                        PVAndFVFormulas presentValue = new PresentValue();
+                        presentValue.InputValues(text);
+                        Console.WriteLine($"The future value is: {presentValue.Result():F2}");
                         MainMenu.BackToMenu();
                     }
 

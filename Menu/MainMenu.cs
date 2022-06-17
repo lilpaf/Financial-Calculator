@@ -2,7 +2,7 @@
 
 namespace Financial_Calculator
 {
-    class MainMenu
+    public class MainMenu
     {
         public static int MenuText()
         {
@@ -12,9 +12,9 @@ namespace Financial_Calculator
             Console.WriteLine("Enter the number corresponding to the value you want to get");
             Console.WriteLine();
             Console.WriteLine("Enter 1 for Future value when accruing interest is only once in a year");
-            //Console.WriteLine("Enter 2 for Future value when accruing interest is more than once in a year"); // in development
+            Console.WriteLine("Enter 2 for Future value when accruing interest is more than once in a year"); 
             Console.WriteLine("Enter 3 for Present value");
-            // Console.WriteLine("Enter 4 Zero-Coupon Bond value ");
+            // Console.WriteLine("Enter 4 Zero-Coupon Bond value "); // in development
 
 
             int functonToeqecute = int.Parse(Console.ReadLine());
@@ -23,7 +23,7 @@ namespace Financial_Calculator
 
         public static void BackToMenu()
         {
-            Console.WriteLine($"Press any button to get back to the menu");
+            Console.WriteLine("Press any button to get back to the menu");
             Console.ReadKey();
             Console.WriteLine();
         }
