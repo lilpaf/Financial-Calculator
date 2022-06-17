@@ -16,12 +16,14 @@ namespace Financial_Calculator
                     Console.WriteLine();
                     Console.WriteLine("Enter your text:");
                     string text = Console.ReadLine();
+                    Console.WriteLine();
 
                     if (functonToExecute == 1)
                     {
                         PVAndFVFormulas futureValueOnceAYear = new FVInterestOnceAYear();
                         futureValueOnceAYear.InputValues(text);
                         Console.WriteLine($"The future value is: {futureValueOnceAYear.Result():F2}");
+                        Console.WriteLine();
                         MainMenu.BackToMenu();
                     }
                     else if (functonToExecute == 2)
@@ -29,13 +31,15 @@ namespace Financial_Calculator
                         PVAndFVFormulas futureValueMoreThanOnceAYear = new FVIntrestRateMoreThanOnceAYear();
                         futureValueMoreThanOnceAYear.InputValues(text);
                         Console.WriteLine($"The future value is: {futureValueMoreThanOnceAYear.Result():F2}");
+                        Console.WriteLine();
                         MainMenu.BackToMenu();
                     }
                     else if (functonToExecute == 3)
                     {
                         PVAndFVFormulas presentValue = new PresentValue();
                         presentValue.InputValues(text);
-                        Console.WriteLine($"The future value is: {presentValue.Result():F2}");
+                        Console.WriteLine($"The present value is: {presentValue.Result():F2}");
+                        Console.WriteLine();
                         MainMenu.BackToMenu();
                     }
 
