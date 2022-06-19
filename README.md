@@ -5,7 +5,7 @@ Future value when accruing interest is more than once in a year is in developmen
 
 ## Instruction
 
-The PV and FV regex pattern looks like this: $20,000.00/$2000.00/€2000000 - There always has to be a currency in front of the number.
+The PV and FV regex pattern looks like this: $20,000.00/$2000.00/€ 2000000 - There always has to be a currency in front of the number.
 This won't work 20,000,00/20,000.00/20,000.00 dollars. 
 
 The rate of return (r) value regex pattern looks like this: 8.8%/8,8 percent/8.8 %.
