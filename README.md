@@ -20,7 +20,7 @@ Bob Terwilliger received $12,745 for his services as a financial consultant to t
 
 The result from the application is: 4017367.51 and the answer from the quiz is 4,017,367.51
 
-### For FV when accruing interest is more than once a year (compound interest monthly and quarterly):
+### For FV when accruing interest is more than once a year (compound interest monthly, quarterly and semiannually):
 Mr. X makes an initial investment of $ 10,000 for a period of 5 years. Find the value of the investment after the five years if the investment earns the return of 3 % compounded monthly.
 
 The result from the application is: 11616.17 and the answer from the quiz is 11,616.17
