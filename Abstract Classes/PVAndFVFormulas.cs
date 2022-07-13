@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using Financial_Calculator.RegexCheck;
+using Financial_Calculator.Checks;
 
 namespace Financial_Calculator.Abstract_Classes
 {
@@ -82,21 +78,30 @@ namespace Financial_Calculator.Abstract_Classes
             Regex rgR = new Regex(patternForRateOfReturn);
             Regex rgN = new Regex(patternForYears);
 
+            
             Match fvAndPVMatch = rgFVAndPV.Match(text);
             Match rMatch = rgR.Match(text);
             Match nMatch = rgN.Match(text);
 
-            string fvAndPVString = Check.RegexSuccess(fvAndPVMatch, "future value or present value");
-            string rString = Check.RegexSuccess(rMatch, "rate of return");
-            string nString = Check.RegexSuccess(nMatch, "number of periods");
+            // Checks if the match succeded and returns the match to string
+            string fvAndPVString = RegexCheck.RegexSuccess(fvAndPVMatch, "future value or present value");
+            string rString = RegexCheck.RegexSuccess(rMatch, "rate of return");
+            string nString = RegexCheck.RegexSuccess(nMatch, "number of periods");
 
+            // Preparing the string to be parsed
             fvAndPVString = fvAndPVString.Replace(",", ""); // problem with Culture
             rString = rString.Replace(",", ".");
             rString = rString.Replace("%", "");
             nString = nString.Replace(" years", "");
+
             PresentValueOrFutureValue = decimal.Parse(fvAndPVString.Substring(1, fvAndPVString.Length - 1));
             RateOfReturn = double.Parse(rString);
+
+            // Checks
+            // returns a number if the num is written it max value to return is 20
             NumOfPeriods = LetterNumbersToNumbers.CheckIfStringIsNumber(nString);
+
+            // Returns a fraction of a year based on the compound period
             NumberOfCompoundingPeriods = CompoundInterestIdentifier.Identifier(text);  // for FV Compound Interest
         }
 

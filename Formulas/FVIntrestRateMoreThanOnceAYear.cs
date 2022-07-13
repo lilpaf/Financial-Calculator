@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using Financial_Calculator.Abstract_Classes;
-using Financial_Calculator.RegexCheck;
 
 namespace Financial_Calculator.Formulas
 {

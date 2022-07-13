@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Text.RegularExpressions;
 using Financial_Calculator.Abstract_Classes;
-using Financial_Calculator.RegexCheck;
 
 namespace Financial_Calculator.Formulas
 {
